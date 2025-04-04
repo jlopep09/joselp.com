@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # O la rama en la que quieras que se haga el despliegue
+      - main
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22'  # Usa la versión de Node.js que necesites
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -27,6 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}  # Token generado automáticamente por GitHub
-          publish_branch: gh-pages  # Rama donde se hará el despliegue
-          publish_dir: dist  # Carpeta que contiene los archivos generados por Vite
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: dist
+          cname: jose.com
