@@ -16,7 +16,7 @@ export default function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <main className="flex items-start justify-center w-full h-dvh bg-stone-900">
-        <p className="my-20">Web en construcción</p>
+        <p className="my-20">Web en construcción.</p>
       </main>
     </ThemeProvider>
   );
