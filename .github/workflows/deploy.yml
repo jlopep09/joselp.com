@@ -28,5 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}  # Token generado automáticamente por GitHub
-          deploy_branch: gh-pages  # Rama donde se hará el despliegue
+          publish_branch: gh-pages  # Rama donde se hará el despliegue
           folder: dist  # Carpeta que contiene los archivos generados por Vite
