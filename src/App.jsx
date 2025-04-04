@@ -1,15 +1,23 @@
 import "./App.css"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#212121',
+    },
+  },
+});
 
+export default function App() {
   return (
-    <>
-      <p>Bienvenido a mi web, actualmente está en desarrollo.</p>
-      <div className="w-full p-4 bg-stone-400">
-        <p>Hola</p>
-      </div>
-    </>
-  )
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <main className="flex items-start justify-center w-full h-dvh bg-stone-900">
+        <p className="my-20">Web en construcción</p>
+      </main>
+    </ThemeProvider>
+  );
 }
-
-export default App
