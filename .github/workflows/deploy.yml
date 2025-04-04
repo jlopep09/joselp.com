@@ -29,4 +29,4 @@ jobs:
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}  # Token generado automáticamente por GitHub
           publish_branch: gh-pages  # Rama donde se hará el despliegue
-          folder: dist  # Carpeta que contiene los archivos generados por Vite
+          publish_dir: dist  # Carpeta que contiene los archivos generados por Vite
