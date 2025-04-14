@@ -4,41 +4,49 @@ import ProjectCard from './components/ProjectCard'
 
   function LineaTiempo() {
     return (
-<section id="Estudios" className="flex flex-col items-center justify-center pt-30 pb-30 bg-white">
+<section id="Estudios" className="flex flex-col items-center justify-center px-4 pt-30 pb-30 bg-white">
   <h2 className="text-3xl font-bold mb-8 text-stone-800 text-center">Mi trayectoria</h2>
   <div className="w-full max-w-3xl space-y-6">
     <div className="flex flex-col space-y-8">
-      <div className="flex items-center gap-6">
-        <div className="text-stone-500 font-semibold w-32">2021</div>
+      <div className="flex flex-col sm:flex-row items-center sm:gap-6">
+
+        <div className="text-stone-500 font-semibold w-32 text-center">2021</div>
         <div className="p-6 bg-white shadow-xl rounded-lg w-full">
           <div className="text-stone-800">
             Comienzo mis estudios en Ingeniería Informática en la <strong>Universidad de León</strong>, donde inicio mi camino en el mundo del desarrollo y las tecnologías.
           </div>
         </div>
+
       </div>
-      <div className="flex items-center gap-6">
-        <div className="text-stone-500 font-semibold w-32">2023</div>
+      <div className="flex flex-col sm:flex-row items-center sm:gap-6">
+
+        <div className="text-stone-500 font-semibold w-32 text-center ">2023</div>
         <div className="p-6 bg-white shadow-xl rounded-lg w-full">
           <div className="text-stone-800">
             Obtengo el título de la <strong>Microcredencial Universitaria en C++</strong> ofrecida por la Universidad de León, fortaleciendo mis habilidades en programación de bajo nivel.
           </div>
         </div>
+
       </div>
-      <div className="flex items-center gap-6">
-        <div className="text-stone-500 font-semibold w-32">Oct - Dic 2024</div>
+      <div className="flex flex-col sm:flex-row items-center sm:gap-6">
+
+        <div className="text-stone-500 font-semibold w-32 text-center">Oct - Dic 2024</div>
         <div className="p-6 bg-white shadow-xl rounded-lg w-full">
           <div className="text-stone-800">
             Realizo prácticas profesionales en <strong>Hewlett Packard Enterprise (CDS)</strong>, creando de cero un proyecto completo llamado GreenhouseIOT y aplicando mis conocimientos en un entorno empresarial.
           </div>
         </div>
+
       </div>
-      <div className="flex items-center gap-6">
-        <div className="text-stone-500 font-semibold w-32">2025</div>
+      <div className="flex flex-col sm:flex-row items-center sm:gap-6">
+
+        <div className="text-stone-500 font-semibold w-32 text-center">2025</div>
         <div className="p-6 bg-white shadow-xl rounded-lg w-full">
           <div className="text-stone-800">
             Finalizaré el grado en <strong>Ingeniería Informática</strong> por la Universidad de León en Julio, consolidando mi formación y experiencia en desarrollo de software.
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -85,16 +93,21 @@ export default function Home() {
 
       <section id="Proyectos" className="flex flex-col items-center justify-center gap-7 p-10 bg-white  pt-30">
       <h2 className="text-3xl font-bold mb-8 text-stone-800 text-center">Mis proyectos</h2>
-        <div className='flex flex-row gap-10 items-center justify-center'>
-          <ProjectCard img_src={"greenhouseiot.jpg"} title={"GreenhouseIOT"}>
+        <div className='flex xl:flex-row flex-col gap-10 items-center justify-center'>
+          <ProjectCard img_src={"greenhouseiot.jpg"} title={"GreenhouseIOT"} docs_link={"https://app.gitbook.com/o/zhiwD9T7aIpHje3tHOwR/s/RDpGUpgtYFiJN3RSO60J/proyectos/greenhouseiot"}>
             Sistema de gestión de módulos de invernadero impresos en 3D. Este proyecto combina tecnologías de diseño 3D, programación de microcontroladores, backend, bases de datos, un frontend web y diseño de circuitos.
           </ProjectCard>
-          <ProjectCard img_src={"https://miposicionamientoweb.es/wp-content/uploads/2022/06/que-es-un-blog-y-para-que-sirve-todo-sobre-el-blogging_.png.webp"} title={"Fororates"}>
+          <ProjectCard img_src={"https://blog.endeos.com/wp-content/uploads/2017/10/diferencias-cloud-vps.jpg"} title={"Confugurador VPS"} docs_link={"https://github.com/jlopep09/ansible-vps"}>
+            Proyecto de Ansible que permite configurar un servidor VPS desde cero. Tras su ejecución, el servidor estará listo para realizar despliegues CICD automáticos de tus proyectos virtualizados.
+          </ProjectCard>
+          <ProjectCard img_src={"https://miposicionamientoweb.es/wp-content/uploads/2022/06/que-es-un-blog-y-para-que-sirve-todo-sobre-el-blogging_.png.webp"} title={"Fororates"} docs_link={"https://app.gitbook.com/o/zhiwD9T7aIpHje3tHOwR/s/RDpGUpgtYFiJN3RSO60J/fororates"}>
             Foro desarrollado de forma conjunta con 3 amigos para ofrecer una plataforma donde los usuarios podrán participar en hilos de debate sobre productos y servicios. Además implementa sistemas de reputación y tienda de puntos virtuales.
           </ProjectCard>
-          <ProjectCard img_src={"yggdrasil.jpeg"} title={"Yggdradil's Chosen"}>
-            Juego desarrollado en Unity junto a 2 amigos basado en mitología vikinga. Ofrece una experiencia similar a títulos como Isaac y Enter the dungeon pero aportando una vista 3D y muchas nuevas mecánicas.
-          </ProjectCard>
+          {
+            //<ProjectCard img_src={"yggdrasil.jpeg"} title={"Yggdradil's Chosen"} hide_btn = {true}>
+            //Juego desarrollado en Unity junto a 2 amigos basado en mitología vikinga. Ofrece una experiencia similar a títulos como Isaac y Enter the dungeon pero aportando una vista 3D y muchas nuevas mecánicas.
+            //</ProjectCard>
+          }
         </div>
       </section>
 

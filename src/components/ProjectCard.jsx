@@ -6,7 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function ProjectCard({children, img_src,  title}) {
+export default function ProjectCard({children, img_src,  title, docs_link, hide_btn}) {
+
   return (
     <Card sx={{ width: 345 }} >
       <CardMedia
@@ -25,7 +26,10 @@ export default function ProjectCard({children, img_src,  title}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button hidden className='w-full' size="small" sx={{ color: 'text.secondary' }}> <p>más información</p></Button>
+        <div className={hide_btn ? "w-full hidden" :  "w-full"}>
+        <Button className='w-full' size="small" sx={{ color: 'text.primary' }}> <a href={docs_link}>más información</a></Button>
+        </div>
+
       </CardActions>
     </Card>
   );
