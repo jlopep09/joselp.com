@@ -94,13 +94,13 @@ export default function Home() {
       <section id="Proyectos" className="flex flex-col items-center justify-center gap-7 p-10 bg-white  pt-30">
       <h2 className="text-3xl font-bold mb-8 text-stone-800 text-center">Mis proyectos</h2>
         <div className='flex xl:flex-row flex-col gap-10 items-center justify-center'>
-          <ProjectCard img_src={"greenhouseiot.jpg"} title={"GreenhouseIOT"} docs_link={"https://app.gitbook.com/o/zhiwD9T7aIpHje3tHOwR/s/RDpGUpgtYFiJN3RSO60J/proyectos/greenhouseiot"}>
+          <ProjectCard img_src={"greenhouseiot.jpg"} title={"GreenhouseIOT"} docs_link={"https://joselp-1.gitbook.io/joselp.com/proyectos/greenhouseiot"}>
             Sistema de gestión de módulos de invernadero impresos en 3D. Este proyecto combina tecnologías de diseño 3D, programación de microcontroladores, backend, bases de datos, un frontend web y diseño de circuitos.
           </ProjectCard>
           <ProjectCard img_src={"https://blog.endeos.com/wp-content/uploads/2017/10/diferencias-cloud-vps.jpg"} title={"Confugurador VPS"} docs_link={"https://github.com/jlopep09/ansible-vps"}>
             Proyecto de Ansible que permite configurar un servidor VPS desde cero. Tras su ejecución, el servidor estará listo para realizar despliegues CICD automáticos de tus proyectos virtualizados.
           </ProjectCard>
-          <ProjectCard img_src={"https://miposicionamientoweb.es/wp-content/uploads/2022/06/que-es-un-blog-y-para-que-sirve-todo-sobre-el-blogging_.png.webp"} title={"Fororates"} docs_link={"https://app.gitbook.com/o/zhiwD9T7aIpHje3tHOwR/s/RDpGUpgtYFiJN3RSO60J/fororates"}>
+          <ProjectCard img_src={"https://miposicionamientoweb.es/wp-content/uploads/2022/06/que-es-un-blog-y-para-que-sirve-todo-sobre-el-blogging_.png.webp"} title={"Fororates"} docs_link={"https://joselp-1.gitbook.io/joselp.com/fororates"}>
             Foro desarrollado de forma conjunta con 3 amigos para ofrecer una plataforma donde los usuarios podrán participar en hilos de debate sobre productos y servicios. Además implementa sistemas de reputación y tienda de puntos virtuales.
           </ProjectCard>
           {

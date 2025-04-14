@@ -36,6 +36,9 @@ function Navbar() {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem key="Docs" disablePadding>
+          <a className='w-full text-center align-middle my-2' href="https://joselp-1.gitbook.io/joselp.com">Docs</a>
+          </ListItem>
       </List>
     </Box>
   );
@@ -62,11 +65,15 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <Button key="DOCS" sx={{ color: '#fff' }}>
+              <a className='w-full text-center align-middle' href="https://joselp-1.gitbook.io/joselp.com">DOCS</a>
+              </Button>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }} component={HashLink} smooth to={"#" + item}>
                 {item.replace("_", " ")}
               </Button>
             ))}
+            
           </Box>
         </Toolbar>
       </AppBar>
