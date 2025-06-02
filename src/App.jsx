@@ -1,6 +1,24 @@
+import About from "./components/About";
+import Conctact from "./components/Conctact";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+
 function App() {
+  const bgClass = "bg-black bg-linear-to-t/oklab from-neutral-950 to-cyan-700/40 from-60% to-6=90%"
   return (
-    <div className="text-7xl font-bold">Portfolio Website Starter Code</div>
+    <div className="min-h-screen ">
+      <div className={" min-h-screen w-full top-0 "+bgClass}>
+        <Navbar></Navbar>
+        <About></About>
+        <Projects></Projects>
+        {/**
+         * 
+        
+        <Conctact></Conctact>
+         */}
+      </div>
+
+    </div>
   );
 }
 
