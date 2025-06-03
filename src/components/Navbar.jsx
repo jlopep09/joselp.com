@@ -32,7 +32,7 @@ export const NavbarMenu = () => {
                     <a href="#projects">Projects</a>
                 </li>
                                 <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
-                    <a href="#contact">Contact</a>
+                    <a href="#timeline">Timeline</a>
                 </li>
             </ul>
             <button className='md:hidden'>
