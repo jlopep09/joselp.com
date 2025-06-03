@@ -1,97 +1,56 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import { HashLink } from 'react-router-hash-link';
+import { ul } from 'motion/react-client';
+import React, { useState } from 'react'
+import { BiMenu } from 'react-icons/bi';
 
-const navItems = ['Sobre_mi', 'Proyectos', 'Estudios'];
-
-function Navbar() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <a href="/">joselp.com</a>
-      </Typography>
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton component={HashLink} smooth to={"#" + item} sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item.replace("_", " ")} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        <ListItem key="Docs" disablePadding>
-          <a className='w-full text-center align-middle my-2' href="https://joselp-1.gitbook.io/joselp.com">Docs</a>
-          </ListItem>
-      </List>
-    </Box>
-  );
-
+export default function Navbar() {
   return (
-    <Box sx={{ display: 'flex', width: '100%', overflowX: 'hidden' }}>
-      <CssBaseline />
-      <AppBar component="nav" position="static" sx={{ width: '100%' }}>
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ display: { xs: 'block', sm: 'block' } }}
-          >
-            joselp.com
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ display: { xs: 'block', sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button key="DOCS" sx={{ color: '#fff' }}>
-              <a className='w-full text-center align-middle' href="https://joselp-1.gitbook.io/joselp.com">DOCS</a>
-              </Button>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }} component={HashLink} smooth to={"#" + item}>
-                {item.replace("_", " ")}
-              </Button>
-            ))}
-            
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        anchor="right"
-        variant="temporary"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        ModalProps={{ keepMounted: true }}
-        sx={{
-          display: { xs: 'block', sm: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
-        }}
-      >
-        {drawer}
-      </Drawer>
-    </Box>
-  );
+    <header className='fixed w-full top-0 bg-black/30 backdrop-blue-md border-b border-gray-700/20 z-50 '>
+        <nav className='max-w-7xl mx-auto p-6 lg:px-32 flex items-center justify-between text-white'>
+            <a href="#about" className='inline-block text-xl md:text-2xl font-semibold hover:scale-110 transition-all duration-300'>
+                <span className='bg-gradient-to-r from-cyan-600 to-cyan-400 text-transparent bg-clip-text'>
+                    Joselp
+                </span>
+            </a>
+            <NavbarMenu></NavbarMenu>
+
+
+        </nav>
+    </header>
+
+  )
 }
 
-export default Navbar;
+export const NavbarMenu = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <>
+            <ul className='hidden md:flex gap-10'>
+                <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                    <a href="#about">About</a>
+                </li>
+                                <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                    <a href="#projects">Projects</a>
+                </li>
+                                <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                    <a href="#timeline">Timeline</a>
+                </li>
+            </ul>
+            <button className='md:hidden'>
+                <BiMenu className='text-3xl' onClick={()=>setIsOpen(!isOpen)}></BiMenu>
+            </button>
+            {isOpen &&(
+                <ul className='gap-4 py-4 md:hidden absolute top-19 right-0 left-0 flex flex-col align-middle justify-center items-center bg-black/60'>
+                    <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                        <a href="#about">About</a>
+                    </li>
+                    <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            )}
+        </>
+    )
+}
