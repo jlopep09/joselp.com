@@ -44,7 +44,7 @@ function Timeline() {
         <div className="text-neutral-300 font-semibold w-32 text-center">2025</div>
         <div className={cardClasses}>
           <div className="text-white">
-            Finalizaré el grado en <strong>Ingeniería Informática</strong> por la Universidad de León en Julio, consolidando mi formación y experiencia en desarrollo de software.
+            Finalizo el grado en <strong>Ingeniería Informática</strong> por la Universidad de León en Julio, consolidando mi formación y experiencia en desarrollo de software.
           </div>
         </div>
 

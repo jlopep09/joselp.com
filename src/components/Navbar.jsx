@@ -26,13 +26,13 @@ export const NavbarMenu = () => {
         <>
             <ul className='hidden md:flex gap-10'>
                 <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
-                    <a href="#about">About</a>
+                    <a href="#about">Sobre mí</a>
                 </li>
                                 <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">Proyectos</a>
                 </li>
                                 <li className='opacity-70 hover:opacity-90  transition-opacity duration-300 hover:underline'>
-                    <a href="#timeline">Timeline</a>
+                    <a href="#timeline">Trayectoria</a>
                 </li>
             </ul>
             <button className='md:hidden'>
