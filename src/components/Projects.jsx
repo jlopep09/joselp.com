@@ -5,7 +5,7 @@ export default function Projects() {
     <>
     <h2 className='text-white text-2xl font-bold text-center pt-30' id='projects' >Mis proyectos</h2>
     <div className='flex flex-col justify-center align-middle items-center w-full py-10'>
-        <div className='grid grid-cols-2 max-w-6xl items-center justify-between align-middle gap-5'>
+        <div className='grid md:grid-cols-2 max-w-6xl items-center justify-between align-middle gap-5'>
             <div className='flex flex-col bg-gradient-to-t from-cyan-950/50 to-cyan-500/30 min-h-20 from-5% to-95% w-xs rounded-md hover:scale-103 transition-all duration-300 cursor-pointer'>
                 <h3 className='text-xl font-bold text-white text-center py-2'>GreenhouseIOT</h3>
                 <img src="greenhouseiot.jpg" alt="GreenhouseIOT project" className='object-cover h-50'/>
