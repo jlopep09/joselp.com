@@ -7,7 +7,7 @@ export default function Projects() {
       imgSrc: 'greenhouseiot.jpg',
       imgAlt: 'GreenhouseIOT project',
       projectDesc: 'Sistema de gestión de módulos de invernadero impresos en 3D. Este proyecto combina tecnologías de diseño 3D, programación de microcontroladores, backend, bases de datos, un frontend web y diseño de circuitos.',
-      projectTags: ['Arduino', 'FastAPI', 'React', 'Ansible'],
+      projectTags: ['Arduino', 'FastAPI', 'React', 'Ansible', 'MariaDB'],
       projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/greenhouseiot',
       imgRenderFormat: "object-cover"
     },
