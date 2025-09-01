@@ -55,7 +55,7 @@ function Project({ projectTitle, imgSrc, imgAlt, projectDesc, projectTags, proje
       <p className='py-5 text-sm text-white text-center h-35'>{projectDesc}</p>
       <p className='flex w-full justify-center gap-2 pb-3'>
         {projectTags.map((tag, idx) => (
-          <span key={idx} className='bg-cyan-200 text-neutral-700 rounded-md p-1 py-0 text-sm font-bold'>
+          <span key={idx} className='bg-cyan-200 text-neutral-700 rounded-md p-1 py-0 text-xs font-bold'>
             {tag}
           </span>
         ))}
