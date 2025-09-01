@@ -90,7 +90,7 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                   className='text-sm text-neutral-300'
                 >
-                  <a href='mailto:jlopep09@estudiantes.unileon.es'>jlopep09@estudiantes.unileon.es</a>
+                  <a href='mailto:jose.lppz03@gmail.com'>jose.lppz03@gmail.com</a>
                 </motion.p>
               )}
             </div>
