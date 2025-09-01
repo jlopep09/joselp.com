@@ -8,15 +8,17 @@ export default function Projects() {
       imgAlt: 'GreenhouseIOT project',
       projectDesc: 'Sistema de gestión de módulos de invernadero impresos en 3D. Este proyecto combina tecnologías de diseño 3D, programación de microcontroladores, backend, bases de datos, un frontend web y diseño de circuitos.',
       projectTags: ['Arduino', 'FastAPI', 'React', 'Ansible'],
-      projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/greenhouseiot'
+      projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/greenhouseiot',
+      imgRenderFormat: "object-cover"
     },
     {
       projectTitle: 'Fororates',
-      imgSrc: 'projectimg.jpg',
+      imgSrc: 'fororates/logo.png',
       imgAlt: 'Fororates project',
-      projectDesc: 'Sistema de gestión de módulos de invernadero impresos en 3D. Este proyecto combina tecnologías de diseño 3D, programación de microcontroladores, backend, bases de datos, un frontend web y diseño de circuitos.',
+      projectDesc: 'ForoRates es una red social web donde los usuarios pueden compartir sus opiniones sobre diversos productos y servicios mediante hilos de comentarios organizados. Además se incluyen compras de ventajas en una tienda.',
       projectTags: ['React', 'PostgreSQL', 'Auth0'],
-      projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/fororates'
+      projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/fororates',
+      imgRenderFormat: "object-contain"
     }
   ];
 
@@ -34,6 +36,7 @@ export default function Projects() {
               projectDesc={project.projectDesc}
               projectTags={project.projectTags}
               projectLink={project.projectLink}
+              imgRenderFormat={project.imgRenderFormat}
             />
           ))}
         </div>
@@ -42,11 +45,13 @@ export default function Projects() {
   )
 }
 
-function Project({ projectTitle, imgSrc, imgAlt, projectDesc, projectTags, projectLink }) {
+function Project({ projectTitle, imgSrc, imgAlt, projectDesc, projectTags, projectLink, imgRenderFormat }) {
+
+  const imgClassNames = imgRenderFormat + " h-50 bg-neutral-700"
   return (
     <a href={projectLink} target='_blank' className='flex flex-col bg-gradient-to-t from-cyan-950/50 to-cyan-500/30 min-h-20 w-xs rounded-md hover:scale-103 transition-all duration-300 cursor-pointer'>
       <h3 className='text-xl font-bold text-white text-center py-2'>{projectTitle}</h3>
-      <img src={imgSrc} alt={imgAlt} className='object-cover h-50' />
+      <img src={imgSrc} alt={imgAlt} className={imgClassNames} />
       <p className='py-5 text-sm text-white text-center h-35'>{projectDesc}</p>
       <p className='flex w-full justify-center gap-2 pb-3'>
         {projectTags.map((tag, idx) => (
