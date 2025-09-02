@@ -20,6 +20,16 @@ export default function Projects() {
       projectLink: 'https://joselp-2.gitbook.io/joselp.com/proyectos/fororates',
       imgRenderFormat: "object-contain"
     }
+    ,
+    {
+      projectTitle: 'Tarkov PouchGuesser',
+      imgSrc: 'icons/questionMark.svg',
+      imgAlt: 'Fororates project',
+      projectDesc: 'Juego web basado en el juego de Tarkov. Actualmente en desarrollo, proximamente se darán mas detalles. Puedes visitar el repositorio haciendo click para ver su estado.',
+      projectTags: ['React', 'MongoDB', 'Java Spring', 'Docker compose'],
+      projectLink: 'https://github.com/jlopep09/TarkovGuessr',
+      imgRenderFormat: "object-contain"
+    }
   ];
 
   return (
