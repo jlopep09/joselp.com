@@ -25,7 +25,7 @@ export default function Projects() {
       projectTitle: 'Tarkov PouchGuesser',
       imgSrc: 'icons/questionMark.svg',
       imgAlt: 'Fororates project',
-      projectDesc: 'Juego web basado en el juego de Tarkov. Actualmente en desarrollo, proximamente se darán mas detalles. Puedes visitar el repositorio haciendo click para ver su estado.',
+      projectDesc: 'Juego web basado en Escape from Tarkov. Actualmente en desarrollo, proximamente se darán mas detalles. Puedes visitar el repositorio haciendo click para ver su estado.',
       projectTags: ['React', 'MongoDB', 'Java Spring', 'Docker compose'],
       projectLink: 'https://github.com/jlopep09/TarkovGuessr',
       imgRenderFormat: "object-contain"
