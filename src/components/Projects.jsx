@@ -23,11 +23,11 @@ export default function Projects() {
     ,
     {
       projectTitle: 'Tarkov PouchGuesser',
-      imgSrc: 'icons/questionMark.svg',
+      imgSrc: 'tarkov/tarkov_guesser_screenshot.png',
       imgAlt: 'Fororates project',
-      projectDesc: 'Juego web basado en Escape from Tarkov. Actualmente en desarrollo, proximamente se darán mas detalles. Puedes visitar el repositorio haciendo click para ver su estado.',
+      projectDesc: 'Juego web basado en Escape from Tarkov. El objetivo es adivinar el contenido secreto de una mochila intentando colocar objetios en las posiciones correctas.',
       projectTags: ['React', 'MongoDB', 'Java Spring', 'Docker compose'],
-      projectLink: 'https://github.com/jlopep09/TarkovGuessr',
+      projectLink: 'https://tarkov.joselp.com',
       imgRenderFormat: "object-contain"
     }
   ];
