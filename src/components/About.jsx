@@ -45,7 +45,7 @@ export default function About() {
           className={aboutClasses}
         >
           <div className='cursor-default flex flex-col justify-center align-middle items-left max-w-2xs gap-1 mr-10'>
-            <span className='flex w-fit text-xs bg-neutral-800 p-2 rounded-md py-1'>Open to hire</span>
+            <span className='flex w-fit text-xs bg-neutral-800 p-2 rounded-md py-1 hidden'>Open to hire</span>
             <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-green-300 text-transparent bg-clip-text'>
               José Antonio López
             </h1>
@@ -53,7 +53,7 @@ export default function About() {
               Ingeniero informático
             </p>
             <p className='text-xs text-neutral-400'>
-              Soy graduado en Ingeniería Informática y me apasiona desarrollar proyectos innovadores que me permitan aprender y crecer cada día.
+              Ingeniero Informático especializado en desarrollo software. Me apasiona desarrollar proyectos innovadores que me permitan aprender y crecer cada día.
             </p>
             <p className='text-xs text-neutral-400'>
               Aquí encontrarás información sobre mí y los proyectos que he desarrollado hasta la fecha.

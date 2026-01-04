@@ -11,9 +11,14 @@ function App() {
       <div className={" min-h-screen w-full top-0 "+bgClass}>
         <Navbar></Navbar>
         <About></About>
-        <Projects></Projects>
         <Timeline></Timeline>
+        <div className="bg-black bg-linear-to-b/oklab from-neutral-950 to-cyan-700/40 from-60% to-6=90%">
         
+        <Projects></Projects>
+        <footer className="text-center py-6 text-stone-500 pt-10">
+        © {new Date().getFullYear()} - Portfolio de José Antonio López Pérez
+        </footer>
+        </div>
         {/**
          * 
         
