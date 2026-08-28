@@ -1,4 +1,3 @@
-import { div } from 'motion/react-client'
 import React from 'react'
 
 function Timeline() {
@@ -53,10 +52,20 @@ function Estudios() {
     <div className="flex flex-col space-y-8">
       <div className="flex flex-col sm:flex-row items-center sm:gap-6">
 
+      <div className="text-slate-600 font-semibold w-32 text-center">Marzo 2026 - Actualidad</div>
+        <div className={cardClasses}>
+          <div className="text-slate-700">
+            <strong>Master en DevOps</strong> por la <strong>Universidad de La Rioja</strong>, especializando en la implementación y mantenimiento de infraestructuras de software. Enfoque en tecnologías cloud.
+          </div>
+        </div>
+
+      </div>
+
+      <div className="flex flex-col sm:flex-row items-center sm:gap-6">
         <div className="text-slate-600 font-semibold w-32 text-center">2021 - 2025</div>
         <div className={cardClasses}>
           <div className="text-slate-700">
-            Grado en Ingeniería Informática en la <strong>Universidad de León</strong>, iniciando mi formación en desarrollo de software y adquiriendo conocimientos fundamentales en programación, algoritmos y estructuras de datos.
+            <strong>Grado en Ingeniería Informática</strong> en la <strong>Universidad de León</strong>, iniciando mi formación en desarrollo de software y adquiriendo conocimientos fundamentales en programación, algoritmos y estructuras de datos.
           </div>
         </div>
 
