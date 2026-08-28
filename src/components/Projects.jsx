@@ -22,12 +22,12 @@ export default function Projects() {
     }
     ,
     {
-      projectTitle: 'Tarkov PouchGuesser',
-      imgSrc: 'tarkov/tarkov_guesser_screenshot.png',
-      imgAlt: 'Fororates project',
-      projectDesc: 'Juego web basado en Escape from Tarkov. El objetivo es adivinar el contenido secreto de una mochila intentando colocar objetios en las posiciones correctas.',
-      projectTags: ['React', 'MongoDB', 'Java Spring', 'Docker compose'],
-      projectLink: 'https://tarkov.joselp.com',
+      projectTitle: 'Servidor Multijugador',
+      imgSrc: 'mc-server/logo.png',
+      imgAlt: 'YukiSurvival',
+      projectDesc: 'Servidor multijugador de un videojuego y servicio web. Creación de complementos específicos desarrollados en Java para ampliar funcionalidades.',
+      projectTags: ['Docker compose', 'Discord', 'Java'],
+      projectLink: 'https://mc.joselp.com',
       imgRenderFormat: "object-contain"
     }
   ];
