@@ -34,7 +34,7 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className='text-white text-2xl font-bold text-center pt-30' id='projects'>Mis proyectos</h2>
+      <h2 className='text-slate-800 text-2xl font-bold text-center pt-30' id='projects'>Mis proyectos</h2>
       <div className='flex flex-col justify-center items-center w-full py-10'>
         <div className='grid md:grid-cols-2 max-w-6xl items-center justify-between gap-5'>
           {projectList.map((project, index) => (
@@ -59,13 +59,13 @@ function Project({ projectTitle, imgSrc, imgAlt, projectDesc, projectTags, proje
 
   const imgClassNames = imgRenderFormat + " h-50 bg-neutral-700"
   return (
-    <a href={projectLink} target='_blank' className='flex flex-col bg-gradient-to-t from-cyan-950/50 to-cyan-500/30 min-h-20 w-xs rounded-md hover:scale-103 transition-all duration-300 cursor-pointer'>
-      <h3 className='text-xl font-bold text-white text-center py-2'>{projectTitle}</h3>
+    <a href={projectLink} target='_blank' className='flex flex-col bg-white/75 border border-slate-200 shadow-sm shadow-slate-300/50 min-h-20 w-xs rounded-md hover:scale-103 hover:shadow-lg hover:shadow-teal-900/10 transition-all duration-300 cursor-pointer'>
+      <h3 className='text-xl font-bold text-slate-800 text-center py-2'>{projectTitle}</h3>
       <img src={imgSrc} alt={imgAlt} className={imgClassNames} />
-      <p className='py-5 text-sm text-white text-center h-35'>{projectDesc}</p>
+      <p className='py-5 text-sm text-slate-600 text-center h-35'>{projectDesc}</p>
       <p className='flex w-full justify-center gap-2 pb-3'>
         {projectTags.map((tag, idx) => (
-          <span key={idx} className='bg-cyan-200 text-neutral-700 rounded-md p-1 py-0 text-xs font-bold'>
+          <span key={idx} className='bg-teal-100 text-teal-800 rounded-md p-1 py-0 text-xs font-bold'>
             {tag}
           </span>
         ))}
