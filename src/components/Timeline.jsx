@@ -1,4 +1,5 @@
 import React from 'react'
+import ExperienceCard from './ExperienceCard'
 
 function Timeline() {
   return (
@@ -38,7 +39,8 @@ function Experiencia() {
         </div>
 
       </div>
-      
+      {/** <ExperienceCard companyName="Xeridia" position="Junior Software Developer" startDate="Nov 2025" endDate="Actualidad" description="Desarrollador software junior fullstack en Xeridia, participando en el desarrollo y mantenimiento de aplicaciones web." iconUrl="/path/to/xeridia-logo.png"></ExperienceCard>
+      **/}
     </div>
    </div>)
 }
